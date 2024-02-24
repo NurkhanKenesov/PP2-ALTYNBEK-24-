@@ -1,8 +1,13 @@
-#ex1 Comments in Python are written with a special character, which one?
-  #This is a comment
-#ex2 Use a multiline string to make the a multiline comment:
-'''
-This is a comment
-written in 
-more than just one line
-'''
+def myfunction(x):
+    a=1
+    if(x<0):
+        return 0
+    elif(x==1):
+        return 1
+    else:
+        while(x>0):
+            a=a*x
+            x=x-1
+        return a
+x=int(input())
+print(myfunction(x))
